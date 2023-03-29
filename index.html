@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Amarschool</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+                <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+                    <!-- Navbar Brand-->
+                    <img src="assets/img/logo-amar-school.png"><a href="index.html"></a>
+                    <!-- Sidebar Toggle-->
+                
+
+                    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+                    
+                    <!--school Name start-->
+                    <div class="text-start text-info fs-5 d-none d-md-block" >Matribhumi School & College (244)</div>
+                    <!--school Name end-->
+                    
+                    <!-- Navbar Search-->
+                    <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                        <div class="input-group">
+                            
+                        </div>
+                    </form>
+                    <!-- Navbar-->
+                            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                                        <li><hr class="dropdown-divider" /></li>
+                                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                </nav>
+        <div id="layoutSidenav">
+                    <div id="layoutSidenav_nav">
+                        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                            <div class="sb-sidenav-menu">
+                                <div class="nav">
+                                    <div class="sb-sidenav-menu-heading">Session: 2023-2024</div>
+                                    <a class="nav-link bg-danger" href="index.html">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                        Dashboard
+                                    </a>
+
+                                    <a class="nav-link collapsed active " href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                        <div class="sb-nav-link-icon "><i class="fas fa-columns"></i></div>
+                                        Layouts
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                            <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                        Pages
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                        <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                                Authentication
+                                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                            </a>
+                                            <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                                <nav class="sb-sidenav-menu-nested nav">
+                                                    <a class="nav-link" href="login.html">Login</a>
+                                                    <a class="nav-link" href="register.html">Register</a>
+                                                    <a class="nav-link" href="password.html">Forgot Password</a>
+                                                </nav>
+                                            </div>
+                                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                                Error
+                                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                            </a>
+                                            <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                                <nav class="sb-sidenav-menu-nested nav">
+                                                    <a class="nav-link" href="401.html">401 Page</a>
+                                                    <a class="nav-link" href="404.html">404 Page</a>
+                                                    <a class="nav-link" href="500.html">500 Page</a>
+                                                </nav>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sb-sidenav-footer">
+                                <div class="small">Logged in as:</div>
+                                Version: v20.21
+                            </div>
+                        </nav>
+                    </div>
+            <div id="layoutSidenav_content">
+
+                    <div class="container-fluid" style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+                        <img src="assets/img/Dashboard-Bannar.png" class= "d-block w-100 h-100px h-md-250px"  alt="" style= "box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+                        
+                        <!--after bannar four feature start-->
+                        <div class="row pt-4">
+                            <div class="col-xl-3 col-md-6" >
+                                <div class="card bg-primary text-white mb-1">
+                                    <div class="card-body">TEACHER/STAFF ATTENDANCE</div>
+                                        <span style="margin-left: 15px; margin-top: -10px; margin-bottom: 5px;"> 05/10 [ Late: 10 ] </span>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-1">
+                                    <div class="card-body">STUDENT ATTENDANCE</div>
+                                    <span style="margin-left: 15px; margin-top: -10px; margin-bottom: 5px;"> 83/120 </span>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-1">
+                                    <div class="card-body">TODAYS FEES COLLECTION</div>
+                                    <span style="margin-left: 15px; margin-top: -10px; margin-bottom: 5px;"> TK 0.0 </span>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-dark text-white mb-1">
+                                    <div class="card-body">SMS BALANCE</div>
+                                    <span style="margin-left: 15px; margin-top: -10px; margin-bottom: 5px;"> 1570 </span>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--after bannar 4 feature end-->
+                    
+
+                    <!---Feature-add start-->
+                        <div class="feature-area container-fluid  wow fadeInUp " style="visibility: visible;animation-name: fadeInUp; margin-top: 50px;">
+                            <div class="feature-add-top"><span>TOP ADDING FEATURE </span></div>
+                    
+                            <div class="">
+                                <div class="row">
+                                    <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #BF3326; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="me-md-2  mb-2 mb-md-0">
+                                                         
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/teacher_add.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/teacher_add.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Teacher</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">শিক্ষক/কর্মচারী রেজিঃ করুন</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #0372f1; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/student_list.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/student_list.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Student</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">ছাত্র/ছাত্রী রেজি করুন</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                        <div class="col-md-3 col-6  p-4 ">
+                                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #ec8208; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <!--begin::item-->
+                                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                                <!-- Desktop version: image size 70px -->
+                                                            <img src="assets/img/tc-drop.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                            <!-- Mobile version: image size 40px -->
+                                                            <img src="assets/img/tc-drop.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column py-md-2">
+                                                            <a href="#" class="text-decoration-none  fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">TC & Drop-out</a>
+                                                            <span class="fs-7 text-muted d-none d-md-block ">টিসি বা ড্রোপ আউট করুন</span>
+                                                        </div>
+                                                    </div>
+                                                <!--end::item-->
+                                            </div>
+                                        </div>
+                                    <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #04a126; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/fee_collection.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/fee_collection.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        
+                                                        <a href="#" class=" text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Collect Fees</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">শ্রেণির ফি আদায় করুন</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #5D2FA2; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/class_ad.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/class_ad.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Class </a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">শ্রেণি যোগ করুন</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                                    <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #BF3326; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/Teacher.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/Teacher.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        <a href="#" class=" text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Section</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block"> সেকশন যোগ করুন</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #027df0; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/add_subject.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/add_subject.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Subject </a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">বিষয় যোগ করুন</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+        
+                        <!--begin::Col-->
+                        <div class="col-md-3 col-6  p-4 ">
+                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #ec8208; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                <!--begin::item-->
+                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                            <!-- Desktop version: image size 70px -->
+                                            <img src="assets/img/add_class_subject.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                            <!-- Mobile version: image size 40px -->
+                                            <img src="assets/img/add_class_subject.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column py-md-2">
+                                            
+                                            <a href="#" class=" text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Class Subject </a>
+                                            <span class="fs-7 text-muted d-none d-md-block">শ্রেনির বিষয় যোগ করুন</span>
+                                        </div>
+                                    </div>
+                                <!--end::item-->
+                            </div>
+                        </div>
+                        <!--end::col-->
+        
+                        <!--begin::Col-->
+                        <div class="col-md-3 col-6  p-4 ">
+                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #016EFA; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                <!--begin::item-->
+                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                           <!-- Desktop version: image size 70px -->
+                                           <img src="assets/img/topics_exam.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                           <!-- Mobile version: image size 40px -->
+                                           <img src="assets/img/topics_exam.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column py-md-2">
+                                            
+                                            <a href="#" class=" text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Topics Exam</a>
+                                            <span class="fs-7 text-muted d-none d-md-block">বিষয় ভিত্তিক পরীক্ষা</span>
+                                        </div>
+                                    </div>
+                                <!--end::item-->
+                            </div>
+                        </div>
+                        <!--end::col-->
+        
+                        <!--begin::Col-->
+                            <div class="col-md-3 col-6  p-4 ">
+                                <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #590164; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                    <!--begin::item-->
+                                        <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                            <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                               <!-- Desktop version: image size 70px -->
+                                               <img src="assets/img/model_text.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                               <!-- Mobile version: image size 40px -->
+                                               <img src="assets/img/model_text.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column py-md-2">
+                                                
+                                                <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">CT/Model Test</a>
+                                                <span class="fs-7 text-muted d-none d-md-block">সাপ্তাহিক/মডেল টেস্ট</span>
+                                            </div>
+                                        </div>
+                                    <!--end::item-->
+                                </div>
+                            </div>
+                        <!--end::col-->
+        
+                                    <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #c00303; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/final_test.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/final_test.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        
+                                                        <a href="#" class=" text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Term/Test/Final Exam</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">১ম সাময়িক/বার্ষিক পরীক্ষা </span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                    <!--end::col-->
+                            
+                                    <!--begin::Col-->
+                                        <div class="col-md-3 col-6  p-4 ">
+                                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #3AAB34; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <!--begin::item-->
+                                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                          <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/mark_Entry.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/mark_Entry.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column py-md-2">
+                                                            
+                                                            <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Exam Mark</a>
+                                                            <span class="fs-7 text-muted d-none d-md-block ">পরীক্ষার নম্বর যোগ করুন</span>
+                                                        </div>
+                                                    </div>
+                                                <!--end::item-->
+                                            </div>
+                                        </div>
+                                    <!--end::col-->
+                                        
+                                        <!--begin::Col-->
+                                        <div class="col-md-3 col-6  p-4 ">
+                                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #c50801; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <!--begin::item-->
+                                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                            <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/lession.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/lession.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column py-md-2">
+                                                            
+                                                            <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add Lesson Plan</a>
+                                                            <span class="fs-7 text-muted d-none d-md-block"> পরিকল্পনা তৈরি করুন</span>
+                                                        </div>
+                                                    </div>
+                                                <!--end::item-->
+                                            </div>
+                                        </div>
+                                    <!--end::col-->
+
+
+                                    <!--begin::Col-->
+                                        <div class="col-md-3 col-6  p-4 ">
+                                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #0463f1; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <!--begin::item-->
+                                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                           <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/diary.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/diary.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column py-md-2">
+                                                            
+                                                            <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Class Dairy</a>
+                                                            <span class="fs-7 text-muted d-none d-md-block">ডায়রী তৈরি করুন</span>
+                                                        </div>
+                                                    </div>
+                                                <!--end::item-->
+                                            </div>
+                                        </div>
+                                    <!--end::col-->
+
+
+                                    <!--begin::Col-->
+                                        <div class="col-md-3 col-6  p-4 ">
+                                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #db9602; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <!--begin::item-->
+                                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                          <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/class-routine.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/class-routine.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column py-md-2">
+                                                            
+                                                            <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Class Routine                                        </a>
+                                                            <span class="fs-7 text-muted d-none d-md-block">শ্রেণি রুটিন তৈরি করুন</span>
+                                                        </div>
+                                                    </div>
+                                                <!--end::item-->
+                                            </div>
+                                        </div>
+                                    <!--end::col-->
+
+                                        <!--begin::Col-->
+                                            <div class="col-md-3 col-6  p-4 ">
+                                                <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #5302a0; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                    <!--begin::item-->
+                                                        <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                            <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                               <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/add_user.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/add_user.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                            </div>
+                                                            <div class="d-flex flex-column py-md-2">
+                                                                
+                                                                <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Add User</a>
+                                                                <span class="fs-7 text-muted d-none d-md-block">ব্যবহারকারী যোগ করুন</span>
+                                                            </div>
+                                                        </div>
+                                                    <!--end::item-->
+                                                </div>
+                                            </div>
+                                        <!--end::col-->
+                                </div>
+                            </div>
+                        </div>
+
+                    <!--feature-add-end-->
+
+
+                    <!--Graph chart start-->
+                        <div class="row pt-4">
+                            <div class="col-xl-6 ">
+                                <div class="card mb-4">
+                                    <div class="card-header bg-green-gradient text-white fw-bold">
+                                        <i class="fas fa-chart-area me-1 text-white"></i>
+                                        Income Graph
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header bg-red-gradient text-white fw-bold">
+                                        <i class="fas fa-chart-pie me-1 text-white"></i>
+                                        Expense Pie Chart
+                                    </div>
+                                    <div class="card-body"><canvas id="myPieChart" width="100%" height="34"></canvas></div>
+                                    <div class="card-footer small text-dark text-center">Updated yesterday at 11:59 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Graph chart start-->
+                        
+                        
+                    <!--Report-feature start-->
+                        <div class="feature-area container-fluid  wow fadeInUp " style="visibility: visible;animation-name: fadeInUp; margin-top: 50px;">
+                            <div class="feature-add-top"><span> AT A GLANCE REPORT</span></div>
+                    
+                            <div class="">
+                                <div class="row">
+                                    <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #BF3326; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                       <!-- Desktop version: image size 70px -->
+                                                       <img src="assets/img/admit_card.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                       <!-- Mobile version: image size 40px -->
+                                                       <img src="assets/img/admit_card.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Print Admit Card </a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">এডমিট কার্ড প্রিন্ট করুন</span>
+                                                        
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #01b84a; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                        <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/id-card_print.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/id-card_print.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Print ID Card</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">পরিচয়পত্র প্রিন্ট করুন</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                        <div class="col-md-3 col-6  p-4 ">
+                                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #ec8208; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <!--begin::item-->
+                                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                           <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/student_list.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/student_list.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column py-md-2">
+                                                            <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Student List</a>
+                                                            <span class="fs-7 text-muted d-none d-md-block">ছাত্র/ছাত্রীদের তালিকা</span>
+                                                        </div>
+                                                    </div>
+                                                <!--end::item-->
+                                            </div>
+                                        </div>
+                                    <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #5D2FA2; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                       <!-- Desktop version: image size 70px -->
+                                                       <img src="assets/img/Teacher.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                       <!-- Mobile version: image size 40px -->
+                                                       <img src="assets/img/Teacher.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Print Contact Info</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">ছাত্রদের যোগাযোগর তথ্য</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #5D2FA2; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                       <!-- Desktop version: image size 70px -->
+                                                       <img src="assets/img/promotion_report.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                       <!-- Mobile version: image size 40px -->
+                                                       <img src="assets/img/promotion_report.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Promotion Report</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">ভর্তি/অগ্রগতির রিপোর্ট</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                                    <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #BF3326; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-2  mb-2 mb-md-0">
+                                                      <!-- Desktop version: image size 70px -->
+                                                      <img src="assets/img/salary_report.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                      <!-- Mobile version: image size 40px -->
+                                                      <img src="assets/img/salary_report.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Salary Report</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">শিক্ষকদের বেতনের রিপোর্ট</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #12CE5D; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-2  mb-2 mb-md-0">
+                                                      <!-- Desktop version: image size 70px -->
+                                                      <img src="assets/img/exam_report-.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                      <!-- Mobile version: image size 40px -->
+                                                      <img src="assets/img/exam_report-.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Print Result </a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">পরীক্ষার ফলাফল প্রিন্ট করুন</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                        <div class="col-md-3 col-6  p-4 ">
+                                            <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #1372ff; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                                <!--begin::item-->
+                                                    <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                        <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                          <!-- Desktop version: image size 70px -->
+                                                        <img src="assets/img/student_attn_report-.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                        <!-- Mobile version: image size 40px -->
+                                                        <img src="assets/img/student_attn_report-.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column py-md-2">
+                                                            
+                                                            <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Student Attn. Report</a>
+                                                            <span class="fs-7 text-muted d-none d-md-block"> উপস্থিতি/বিলম্ব রিপোার্ট</span>
+                                                        </div>
+                                                    </div>
+                                                <!--end::item-->
+                                            </div>
+                                        </div>
+                                    <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                    <div class="col-md-3 col-6  p-4 ">
+                                        <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #02b136; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <!--begin::item-->
+                                                <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                    <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                       <!-- Desktop version: image size 70px -->
+                                                       <img src="assets/img/teacher_attn_report.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                       <!-- Mobile version: image size 40px -->
+                                                       <img src="assets/img/teacher_attn_report.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column py-md-2">
+                                                        
+                                                        <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Teacher Attn. Report</a>
+                                                        <span class="fs-7 text-muted d-none d-md-block">উপস্থিতি/বিলম্ব রিপোর্ট</span>
+                                                    </div>
+                                                </div>
+                                            <!--end::item-->
+                                        </div>
+                                    </div>
+                                <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                <div class="col-md-3 col-6  p-4 ">
+                                    <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #2769f8; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                        <!--begin::item-->
+                                            <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                               <!-- Desktop version: image size 70px -->
+                                               <img src="assets/img/fee_report.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                               <!-- Mobile version: image size 40px -->
+                                               <img src="assets/img/fee_report.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column py-md-2">
+                                                    
+                                                    <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Fee Collection Report</a>
+                                                    <span class="fs-7 text-muted d-none d-md-block">বেতন আদায়ের রিপোর্ট</span>
+                                                </div>
+                                            </div>
+                                        <!--end::item-->
+                                    </div>
+                                </div>
+                            <!--end::col-->
+                        
+                            <!--begin::Col-->
+                                <div class="col-md-3 col-6  p-4 ">
+                                    <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #dba904; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                            <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                   <!-- Desktop version: image size 70px -->
+                                                   <img src="assets/img/due_fee_report-.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                   <!-- Mobile version: image size 40px -->
+                                                   <img src="assets/img/due_fee_report-.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column py-md-2">
+                                                    
+                                                    <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Due Fee Report</a>
+                                                    <span class="fs-7 text-muted d-none d-md-block">বকেয়া বেতনের রিপোর্ট </span>
+                                                </div>
+                                            </div>
+                                        <!--end::item-->
+                                    </div>
+                                </div>
+                            <!--end::col-->
+                        
+                                <!--begin::Col-->
+                                <div class="col-md-3 col-6  p-4 ">
+                                    <div class="card rounded-0 p-2 p-md-50 bg-hover-light-success" style="border-left: 5px solid #6d028d; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+                                        <!--begin::item-->
+                                            <div class="d-flex flex-column flex-md-row text-center text-md-start">
+                                                <div class="symbol symbol-px symbol-md- px me-md-3  mb-2 mb-md-0">
+                                                   <!-- Desktop version: image size 70px -->
+                                                   <img src="assets/img/expense_report.png" class="img-fluid img-thumbnail d-none d-md-block" style="width: 75px; " alt="">
+
+                                                   <!-- Mobile version: image size 40px -->
+                                                   <img src="assets/img/expense_report.png" class="img-fluid img-thumbnail d-md-none" style="width: 50px;" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column py-md-2">
+                                                    
+                                                    <a href="#" class="text-decoration-none fw-md-bolder text-hover-primary fs-md-8 fs-5 mb-1 fs-6 stretched-link">Expence Report</a>
+                                                    <span class="fs-7 text-muted d-none d-md-block">ব্যয়ের রিপোর্ট</span>
+                                                </div>
+                                            </div>
+                                        <!--end::item-->
+                                    </div>
+                                </div>
+                            <!--end::col-->
+                            </div>
+                        </div>
+                        </div>
+                    <!--Report Feature end-->
+
+
+                    <!--footer section start-->  
+                        <footer class="py-4 bg-light mt-auto">
+                            <div class="container-fluid px-4">
+                                <div class="d-flex align-items-center justify-content-between small">
+                                    <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                                    <div>
+                                        <a href="#">Privacy Policy</a>
+                                        &middot;
+                                        <a href="#">Terms &amp; Conditions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    <!--footer section end-->
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="assets/demo/chart-pie-demo.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
