@@ -8164,6 +8164,11 @@ background: linear-gradient(90deg, rgba(168,0,0,1) 0%, rgba(231,4,0,1) 100%, rgb
 }
 
 
+.bg-blue-gradient{
+background: rgb(0,0,115);
+background: linear-gradient(90deg, rgba(0,0,115,1) 0%, rgba(2,113,255,1) 100%, rgba(0,105,231,1) 100%, rgba(181,0,0,1) 100%, rgba(3,200,4,1) 100%);
+}
+
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
