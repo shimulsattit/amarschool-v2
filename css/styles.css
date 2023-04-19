@@ -324,6 +324,11 @@ th {
   text-align: inherit;
   text-align: -webkit-match-parent;
 }
+thead {
+	
+	background-color:#126c02;
+	color:white;
+}
 
 thead,
 tbody,
